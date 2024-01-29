@@ -1,3 +1,7 @@
+"""
+Esse módulo faz chamadas básicas no site https://realpython.github.io/fake-jobs/.
+"""
+
 import requests
 from bs4 import BeautifulSoup
 
