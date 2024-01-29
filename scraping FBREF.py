@@ -8,7 +8,7 @@ from datetime import datetime
 from dateutil import parser
 
 URL = "https://fbref.com/pt/partidas/dcc5f94f/Flamengo-Palmeiras-2023Novembro8-Serie-A"
-page = requests.get(URL)
+page = requests.get(URL,timeout=10)
 content = page.content
 
 soup = BeautifulSoup(content, "html.parser")
